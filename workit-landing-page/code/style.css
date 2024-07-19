@@ -1,0 +1,337 @@
+body {
+	background-color: #FCF8FF;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #24053E;
+    width: 100%;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    color: white;
+    text-align: center;
+    padding-bottom: 200px; /* Extra padding to accommodate the overlapping image */
+    position: relative; /* Make it a containing block for the absolutely positioned image */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu a {
+    color: white; 
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;  
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+.menu img {
+    width: 95px;
+    height: 24px;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.title h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.title h1 span {
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;  
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+.title button {
+    background-color: #44FFA1;
+    color: #24053E;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.phone {
+    width: 100%;
+    max-width: 767px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    bottom: -170px; /* Adjust this value to control the overlap */
+    transform: translate(-50%, 20%);
+    z-index: 1; /* Ensure it appears above other content */
+}
+.three-points-tablet {
+     display:none;
+}
+.three-points {
+    display: flex;
+    background-color: #FCF8FF;
+    text-align: center;
+    padding: 270px 20px 50px; /* Extra top padding to accommodate the overlapping image */
+    position: relative;
+    z-index: 0; /* Ensure it appears below the overlapping image */
+}
+
+.point {
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: none;
+    color: #24053E;
+    border-color: #584D62;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces 144pt S000';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.point h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.point p {
+    font-size: 18px;
+    color: #333;
+}
+
+.portfolio {
+	margin-top:15%;
+}
+
+.portfoliodiv {
+	background-color:#24053E;
+	width:35%;
+	margin-left:35%;
+}
+.portfolio button {
+	 background-color: #44FFA1;
+    color:#24053E;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: thin;
+    border-color:#44FFA1;
+    cursor: pointer;
+    margin: 20px 0;
+   }
+   .portfolio button:hover{
+   	 background-color:#24053E;
+   	 color:#44FFA1;
+   	 border-style:solid;
+   	 border-color: #44FFA1;
+   }
+   .portfoliodiv {
+   	padding:30px;
+   	align-items: center;
+   }
+   .portfolio img {
+   	transform: translate(75%);
+   	    z-index:-1;
+   	    margin-top: -10%;
+   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Optional background color */
+    margin-top: 50px; /* Optional margin to separate it from the content above */
+}
+
+.footer-logo {
+    margin-bottom: 20px; /* Space between logo and social icons */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px; /* Space between the social icons */
+}
+
+.social-icons img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+}
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 200px; /* More space for the phone image */
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .title button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .phone {
+        bottom: 20px; /* Move the phone image down */
+        transform: translate(-50%, 50%); /* Center it properly */
+    }
+.three-points-tablet {
+    display:none;
+}
+    .three-points {
+        display: flex;
+        flex-direction: column; /* Stack the points vertically */
+        padding: 100px 20px 50px; /* Adjust padding for mobile */
+    }
+
+    .point {
+        margin: 0 auto 50px; /* Center points and more space between points */
+    }
+
+    .dot {
+        margin: 0 auto 10px; /* Center dots and space below */
+    }
+    .porfolio {
+        display: flex;
+        flex-direction: column;
+      
+    
+    }
+    .portfolio img {
+    transform: translate(0%);
+        z-index:-1;
+        margin-top: -10%;
+       transform: translate(11.5%, -50%); /* Center it properly */
+
+
+   }
+   .portfoliodiv{
+    width:80%;
+    margin: 70% 5% 5% 5%;
+   }
+
+    footer {
+        margin: 0 auto; /* Center the footer on mobile */
+        text-align: center; /* Center align text */
+    }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        background-color: #FCF8FF;
+    }
+    .three-points-tablet {
+    display:inline-block;
+}
+.three-points {
+    display:none;
+}
+  .three-points-tablet {
+    display: inline-block;
+    background-color: #FCF8FF;
+    text-align: center;
+    padding: 270px 20px 50px; /* Extra top padding to accommodate the overlapping image */
+    position: relative;
+    z-index: 0; /* Ensure it appears below the overlapping image */
+}
+
+.point-tablet {
+    align-items: center;
+    display:flex;
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+
+.dot-tablet {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: none;
+    color: #24053E;
+    border-color: #584D62;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces 144pt S000';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.point-tablet h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.point-tablet p {
+    font-size: 18px;
+    color: #333;
+}
+
+    .size-tablet-text{
+      text-align: left;
+        margin-left:3%;
+        width:70%;
+    }
+    .size-tablet-dot{
+    
+         width:10%;
+    }
+
+ 
+    .portfoliodiv {
+        margin-top: 400px; /* Adjust margin to create space above the image */
+        width:60%;
+        margin-left:30%;
+       
+    }
+
+    .portfolio img {
+        margin-top: -10%; /* Adjust the negative margin for proper positioning */
+        transform: translate(5%, -50%);
+    }
+
+    footer {
+        text-align: center; /* Center align text */
+        padding: 20px 0;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+                                                                                                                                                                                                                                                                                                                 
+    .footer-logo {
+        margin-bottom: 10px; /* Adjust space between logo and social icons */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center the social icons */
+        gap: 10px; /* Adjust space between icons */
+    }
+}
